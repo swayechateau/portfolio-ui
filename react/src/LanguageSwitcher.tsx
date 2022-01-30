@@ -38,7 +38,7 @@ function LanguageSwitcher({absolute, show = false, current, langs, onSwitch}: IL
                 </button>
                 <div className={`absolute right-0 ${absolute ? 'py-1' : 'mt-3'} ${menu ? 'block' : 'hidden'} ${show ? 'backdrop-blur-sm bg-[rgba(53,206,4,0.25)] shadow-0_8px_32px_0_rgba(31,38,135,0.37)] text-white' : 'text-gray bg-white'}`} >
                     {langs.map(lan => (
-                        <button key={lan.code} onClick={() => changeLang(lan.code)} className="py-[.54rem] px-4 block nowrap pointer" >{lan.native_name || lan.name}</button>
+                        <button key={lan.code} onClick={() => changeLang(lan.code)} className="py-[.54rem] px-4 block nowrap pointer hover:text-green-400" >{lan.native_name || lan.name}</button>
                     ))}
                 </div>
             </div>
