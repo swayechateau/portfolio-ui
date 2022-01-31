@@ -1,4 +1,4 @@
-import { Typewriter } from './Typewriter';
+import Typewriter from '../Typewriter/Typewriter';
 
 export interface IBanner {
     large:boolean, 
@@ -18,7 +18,7 @@ function Banner({large, hero, title, subtitle}: IBanner) {
                         {title}
                     </h1>
                     <h2 className='py-2 text-base'>
-                        {subtitle && <Typewriter string={subtitle} delay={200} cursor='_'/> }
+                        {subtitle && <Typewriter string={subtitle} delay={200} cursor='_' stopBlinkinOnComplete={false} customClass={''} onComplete={()=>{}} cursorClass={''}/> }
                     </h2>
                 </div>
             </div>
