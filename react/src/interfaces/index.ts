@@ -7,7 +7,7 @@
 /*
  * 0. State Langaugaes
  */
-export interface IStateLanguages {
+export interface IStateLanguage {
   id: number;
   name: string;
   native_name: string;
