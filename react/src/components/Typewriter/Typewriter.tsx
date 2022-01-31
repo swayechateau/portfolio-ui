@@ -10,7 +10,7 @@ export interface ITypewriter {
   cursorClass: string
 }
 
-export function Typewriter({
+function Typewriter({
   string = '',
   delay = 100,
   stopBlinkinOnComplete = false,
@@ -44,3 +44,5 @@ export function Typewriter({
     </span>
   )
 }
+
+export default Typewriter
