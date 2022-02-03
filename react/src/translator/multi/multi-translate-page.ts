@@ -26,6 +26,10 @@ export class MultiTranslatePage extends MultiTranslate {
       meta: dataTranslated.meta,
       posted_at: data.posted_at,
       updated_at: dataTranslated.updated_at,
+  asArray: boolean;
+  everyLanguage() {
+    throw new Error('Method not implemented.');
+  }
     };
 
     return translated;

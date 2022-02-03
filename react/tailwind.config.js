@@ -10,6 +10,13 @@ module.exports = {
           'linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111)',
         'fade-top':
           'linear-gradient(360deg, transparent, rgba(37, 37, 37, 0.61), #111)',
+        'radial-green':'radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,121,96,1) 35%, rgba(0,0,0,1) 100%)',
+        'main': 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)',
+        'trees': `url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+        url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+        url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+        url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+        url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png')`
       },
       animation: {
         glow: 'glow 4s infinite',
