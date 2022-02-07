@@ -17,8 +17,7 @@ class Translate {
     this.model = model;
   }
 
-  all(asArray:boolean = true): object[] {
-    this.asArray = asArray;
+  all(): object[] {
     return this.asArray ? (this.all_as_array()) : (this.all_as_object());
   }
 

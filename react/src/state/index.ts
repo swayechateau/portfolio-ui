@@ -2313,7 +2313,7 @@ export const projects: IStateProjects = {
     translations: {
       "en-gb": {
         name: "Movie List",
-        title: null,
+        title: "Recruitment Project Movie list",
         sub_title: null,
         description: "A simple react frontend for the OMDb API",
         content: {

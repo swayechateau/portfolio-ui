@@ -31,4 +31,4 @@ export const posts = multiPosts.translated
 export const multiPages = new MultiTranslatePage(LanguageCodes, lang, spgs)
 multiPages.asArray = false;
 multiPages.everyLanguage()
-export const pages = multiPosts.translated
+export const pages = multiPages.translated

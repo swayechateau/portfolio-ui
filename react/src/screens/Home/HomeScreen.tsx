@@ -19,6 +19,7 @@ export interface IHomeScreen {
 }
 
 function HomeScreen({page, language, setLanguage}: IHomeScreen) {
+  console.log(posts)
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden bg-[#111]">
       <Navigation mobileYAxis={30} desktopYAxis={40} onSwitch={setLanguage} language={language} languages={langs}/>
@@ -29,9 +30,9 @@ function HomeScreen({page, language, setLanguage}: IHomeScreen) {
           subtitle={page.sub_title}
         />
       <main className="grow">
-        <FeaturedProjects projects={projects[language]} />
-        <AboutSnippet />
-        <RecentPosts posts={posts[language]} amount={4}/>
+         <FeaturedProjects projects={projects[language]} />
+         <AboutSnippet />
+         <RecentPosts posts={posts[language]} amount={4}/>
         <div className='p-4 m-4'>
           <RecentVideos />
         </div>

@@ -1,9 +1,9 @@
-import MultiTranslate from "./multi-translate";
+import MultiTranslate from './multi-translate';
 import {
   IStatePost,
   ITranslatedPost,
   IStatePostTranslation,
-} from "./../../interfaces/index";
+} from './../../interfaces/index';
 
 class MultiTranslatePost extends MultiTranslate {
   transform(data: IStatePost) {
@@ -30,10 +30,6 @@ class MultiTranslatePost extends MultiTranslate {
       readtime: dataTranslations.readtime,
       category: data.category,
       posted_at: data.posted_at,
-  everyLanguage() {
-    throw new Error('Method not implemented.');
-  }
-  translated: any;
       updated_at: dataTranslations.updated_at,
     };
     return translated;

@@ -6,6 +6,7 @@ interface IPosts {
     amount: number
 }
 function RecentPosts({ posts, amount = 4 }:IPosts) {
+    console.log(posts)
     const rPosts:ITranslatedPost[] = [];
     const [recentPosts, setRecentPosts] = useState(rPosts)
 
@@ -26,10 +27,12 @@ function RecentPosts({ posts, amount = 4 }:IPosts) {
     }, [posts, amount])
     return (
         <div className="p-8">
-            <h2 className="p-4 text-center font-bold capitalize lg:p-8">Recent Blog Posts</h2>
-            <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
+            <h2 className="p-4 font-bold text-center capitalize lg:p-8">Recent Blog Posts</h2>
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                 {recentPosts.map(post => (
-                    <RecentPost post={post} />
+                    <div key={post.index}>
+                       <RecentPost post={post} /> 
+                    </div>
                 ))}
             </div>
         </div>

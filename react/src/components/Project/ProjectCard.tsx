@@ -1,17 +1,16 @@
-import { ITranslatedProject } from '../../translator/translate-project'
+import { ITranslatedProject } from "../../interfaces"
 export interface IProjectCard {
-    key: number | string,
     project: ITranslatedProject
 }
 
-function ProjectCard({ key, project }: IProjectCard) {
+function ProjectCard({ project }: IProjectCard) {
     return (
-        <div id={`project-${key}`} className='bg-[rgba(255,255,255,0.05)] text-white my-3 w-full rounded-2xl overflow-hidden backdrop-blur transition-all ease-out hover:ease-out hover:transition-all hover:rounded md:grayscale md:hover:grayscale-0'>
+        <div className='bg-[rgba(255,255,255,0.05)] text-white my-3 w-full rounded-2xl overflow-hidden backdrop-blur transition-all ease-out hover:ease-out hover:transition-all hover:rounded md:grayscale md:hover:grayscale-0'>
             <a href='#case-study'>
                 <div className='relative h-80'>
                     <img className='w-full h-full transition-all ease-out filter' src={project.hero} />
                     <div className='absolute top-0 left-0 right-0 text-white py-2 px-4 bg-[rgba(0,0,0,0.4)] backdrop-blur-sm'>
-                        <h3 className="text-2xl capitalize font-bold">{project.name}</h3>
+                        <h3 className="text-2xl font-bold capitalize">{project.name}</h3>
                         <p className="text-xl">{project.description}</p>
                     </div>
                 </div>
